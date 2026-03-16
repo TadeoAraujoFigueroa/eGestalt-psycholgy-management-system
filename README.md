@@ -1,5 +1,7 @@
 # eGestalt
-
+![C#](https://img.shields.io/badge/language-C%23-purple)
+![.NET](https://img.shields.io/badge/.NET-WinForms-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 Sistema de gestión de turnos, sesiones y facturación para clínicas psicológicas desarrollado en C# WinForms.
 
 ## Funcionalidades
