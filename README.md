@@ -26,3 +26,21 @@ Ejecutar el instalador incluido en la carpeta /Instalador.
 
 ## Autor
 [Tadeo Araujo Figueroa]
+
+## Screenshots
+
+### Menú
+![Menú](docs/images/menu.png)
+
+### Dashboard
+![Dashboard](docs/images/dashboard.png)
+
+### Turnero
+![Turnero](docs/images/turnero.png)
+
+### Pacientes
+![Pacientes](docs/images/pacientes.png)
+
+### Historias clínicas
+![HistoriasClinicas](docs/images/historia-clinica.png)
+
