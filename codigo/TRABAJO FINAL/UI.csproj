@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08930CA7-6332-4135-961F-9219E1F0302B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TRABAJO_FINAL</RootNamespace>
+    <AssemblyName>TRABAJO FINAL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xceed.Document.NET, Version=5.1.25458.6676, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>packages\Xceed.Document.NET.5.1.25458.6676\lib\net40\Xceed.Document.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Drawing.NET, Version=1.0.25458.6676, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>packages\Xceed.Drawing.NET.1.0.25458.6676\lib\net40\Xceed.Drawing.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Pdf, Version=5.1.25458.6676, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>packages\Xceed.Pdf.5.1.25458.6676\lib\net40\Xceed.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Words.NET, Version=5.1.25458.6676, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>packages\Xceed.Words.NET.5.1.25458.6676\lib\net40\Xceed.Words.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormABMPsicologos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormABMPsicologos.Designer.cs">
+      <DependentUpon>FormABMPsicologos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormABMUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormABMUsuarios.Designer.cs">
+      <DependentUpon>FormABMUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActualizarTarifa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActualizarTarifa.Designer.cs">
+      <DependentUpon>FormActualizarTarifa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaPago.Designer.cs">
+      <DependentUpon>FormAltaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackUp.Designer.cs">
+      <DependentUpon>FormBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBitacora.Designer.cs">
+      <DependentUpon>FormBitacora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalculoHonorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalculoHonorarios.Designer.cs">
+      <DependentUpon>FormCalculoHonorarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalculoTarifa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalculoTarifa.Designer.cs">
+      <DependentUpon>FormCalculoTarifa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCorreo.Designer.cs">
+      <DependentUpon>FormCorreo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearTurno.Designer.cs">
+      <DependentUpon>FormCrearTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCuponesSolicitados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCuponesSolicitados.Designer.cs">
+      <DependentUpon>FormCuponesSolicitados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstadoTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstadoTurno.Designer.cs">
+      <DependentUpon>FormEstadoTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGeneracionCuponDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeneracionCuponDePago.Designer.cs">
+      <DependentUpon>FormGeneracionCuponDePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestorHistoriaClínica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestorHistoriaClínica.Designer.cs">
+      <DependentUpon>FormGestorHistoriaClínica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformesRealizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformesRealizados.Designer.cs">
+      <DependentUpon>FormInformesRealizados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaPacientes.Designer.cs">
+      <DependentUpon>FormListaPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoguin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoguin.Designer.cs">
+      <DependentUpon>FormLoguin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModificarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarSesion.Designer.cs">
+      <DependentUpon>FormModificarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormObservacionInforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormObservacionInforme.Designer.cs">
+      <DependentUpon>FormObservacionInforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPacientesActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPacientesActivos.Designer.cs">
+      <DependentUpon>FormPacientesActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPacientesDiscontinuados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPacientesDiscontinuados.Designer.cs">
+      <DependentUpon>FormPacientesDiscontinuados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPacientesEnEspera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPacientesEnEspera.Designer.cs">
+      <DependentUpon>FormPacientesEnEspera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerfilUsuario.Designer.cs">
+      <DependentUpon>FormPerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteSesiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteSesiones.Designer.cs">
+      <DependentUpon>FormReporteSesiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRestore.Designer.cs">
+      <DependentUpon>FormRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRolesPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRolesPermisos.Designer.cs">
+      <DependentUpon>FormRolesPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaPacientes.Designer.cs">
+      <DependentUpon>FormAltaPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTablaDeSalarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTablaDeSalarios.Designer.cs">
+      <DependentUpon>FormTablaDeSalarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTablaDeTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTablaDeTurnos.Designer.cs">
+      <DependentUpon>FormTablaDeTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTablaHistoriasClinicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTablaHistoriasClinicas.Designer.cs">
+      <DependentUpon>FormTablaHistoriasClinicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTablaSesiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTablaSesiones.Designer.cs">
+      <DependentUpon>FormTablaSesiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTablaTarifas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTablaTarifas.Designer.cs">
+      <DependentUpon>FormTablaTarifas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTurneroDiarioDos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTurneroDiarioDos.Designer.cs">
+      <DependentUpon>FormTurneroDiarioDos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTurneroMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTurneroMensual.Designer.cs">
+      <DependentUpon>FormTurneroMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormValidarInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormValidarInformes.Designer.cs">
+      <DependentUpon>FormValidarInformes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerificarCodigoDeAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerificarCodigoDeAcceso.Designer.cs">
+      <DependentUpon>FormVerificarCodigoDeAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilPsicologo.Designer.cs">
+      <DependentUpon>PerfilPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormABMPsicologos.resx">
+      <DependentUpon>FormABMPsicologos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormABMUsuarios.resx">
+      <DependentUpon>FormABMUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActualizarTarifa.resx">
+      <DependentUpon>FormActualizarTarifa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaPago.resx">
+      <DependentUpon>FormAltaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBackUp.resx">
+      <DependentUpon>FormBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBitacora.resx">
+      <DependentUpon>FormBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalculoHonorarios.resx">
+      <DependentUpon>FormCalculoHonorarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalculoTarifa.resx">
+      <DependentUpon>FormCalculoTarifa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCorreo.resx">
+      <DependentUpon>FormCorreo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearTurno.resx">
+      <DependentUpon>FormCrearTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCuponesSolicitados.resx">
+      <DependentUpon>FormCuponesSolicitados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstadoTurno.resx">
+      <DependentUpon>FormEstadoTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneracionCuponDePago.resx">
+      <DependentUpon>FormGeneracionCuponDePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestorHistoriaClínica.resx">
+      <DependentUpon>FormGestorHistoriaClínica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInformesRealizados.resx">
+      <DependentUpon>FormInformesRealizados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaPacientes.resx">
+      <DependentUpon>FormListaPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoguin.resx">
+      <DependentUpon>FormLoguin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificarSesion.resx">
+      <DependentUpon>FormModificarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormObservacionInforme.resx">
+      <DependentUpon>FormObservacionInforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPacientesActivos.resx">
+      <DependentUpon>FormPacientesActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPacientesDiscontinuados.resx">
+      <DependentUpon>FormPacientesDiscontinuados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPacientesEnEspera.resx">
+      <DependentUpon>FormPacientesEnEspera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerfilUsuario.resx">
+      <DependentUpon>FormPerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteSesiones.resx">
+      <DependentUpon>FormReporteSesiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRestore.resx">
+      <DependentUpon>FormRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRolesPermisos.resx">
+      <DependentUpon>FormRolesPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaPacientes.resx">
+      <DependentUpon>FormAltaPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTablaDeSalarios.resx">
+      <DependentUpon>FormTablaDeSalarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTablaDeTurnos.resx">
+      <DependentUpon>FormTablaDeTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTablaHistoriasClinicas.resx">
+      <DependentUpon>FormTablaHistoriasClinicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTablaSesiones.resx">
+      <DependentUpon>FormTablaSesiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTablaTarifas.resx">
+      <DependentUpon>FormTablaTarifas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTurneroDiarioDos.resx">
+      <DependentUpon>FormTurneroDiarioDos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTurneroMensual.resx">
+      <DependentUpon>FormTurneroMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormValidarInformes.resx">
+      <DependentUpon>FormValidarInformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerificarCodigoDeAcceso.resx">
+      <DependentUpon>FormVerificarCodigoDeAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilPsicologo.resx">
+      <DependentUpon>PerfilPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{AB22547C-6A15-4E7F-BF8C-7B37870D7EBB}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{7d6b4c6e-c484-4c4e-8949-ecb787d5f1a3}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.csproj">
+      <Project>{1dd7c1b9-4582-4867-bcbe-e5d36476e957}</Project>
+      <Name>Seguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicios\Servicios.csproj">
+      <Project>{05041ce5-880b-4d93-8088-651e458398b8}</Project>
+      <Name>Servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\i.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\LOGO_PROGRAMA.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\LOGO_PSICO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\n.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\u.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
